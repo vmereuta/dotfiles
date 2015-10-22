@@ -15,7 +15,7 @@ if `hostname -d` = "maninvestments.com"; then
     alias sqlplus="rlwrap -i -f ~/.sqlplus_history -H ~/.sqlplus_history -s 30000 sqlplus"
     alias 'gith'='withproxy git'
 
-    if `hostname -s` = lonahlws27; then
+    if `hostname -s` = "lonahlws27"; then
         export MONGOOSE_CENTAUR_DB=localhost
         pgrep -f 27017 || ssh -L27017:centaur.dev.man.com:27017 -fN cn90
     fi    
@@ -23,4 +23,5 @@ fi
 
 export GITAWAREPROMPT=~/.dotfiles/git-aware-prompt
 source "${GITAWAREPROMPT}/main.sh"
+#source ~/.dotfiles/git-prompt.sh
 source ~/.bash/git-completion.bash
