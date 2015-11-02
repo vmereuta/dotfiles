@@ -7,6 +7,7 @@ if [ `hostname -d` = "maninvestments.com" ]; then
     #export SELENIUM_PORT=9515
     #export SELENIUM_HOST=LONW13241
     #export PY_BACKEND=agg
+    export PYTHONDONTWRITEBYTECODE=true
     deactivate
     use_python_2_7_3
     use_python
