@@ -1,8 +1,7 @@
 #!/bin/bash
 # AHL standard profile - do not remove the following line!
 # Put customisations here...
-
-if [ `hostname -d` = "maninvestments.com" ]; then
+if [[ `hostname` ==  *"maninvestments.com" ]]; then
     . /etc/bashrc.ahl
     #export SELENIUM_PORT=9515
     #export SELENIUM_HOST=LONW13241
