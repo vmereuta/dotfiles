@@ -7,6 +7,10 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 
+alias sqlplus="rlwrap -i -f ~/.sqlplus_history -H ~/.sqlplus_history -s 30000 sqlplus"
+alias gith='withproxy git'
+alias tree="tree -FAC"
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"

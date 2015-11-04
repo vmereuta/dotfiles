@@ -1,6 +1,6 @@
 #!/bin/bash
 
-to_install=".bash_profile  .bashrc .gitconfig .profile .screenrc  .vimrc"
+to_install=".inputrc .aliases .bash_profile  .bashrc .gitconfig .profile .screenrc  .vimrc"
 
 set +x
 this_dir=$(dirname $(readlink -f $0))
